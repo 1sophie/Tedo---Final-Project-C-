@@ -19,11 +19,10 @@ public class PlayerMovement : MonoBehaviour
             float move = Input.GetAxis("Horizontal");
             rb.velocity = new Vector2(move * speed, rb.velocity.y);
 
-            // Jumping
+           
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                // Change 0.05f to 0.01f to be more strict
-                // This stops you from jumping while already in the air
+                
                 if (Mathf.Abs(rb.velocity.y) < 0.01f)
                 {
                     rb.velocity = new Vector2(rb.velocity.x, 0);
