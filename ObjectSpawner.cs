@@ -24,10 +24,10 @@ public class ObjectSpawner : MonoBehaviour
      
         float randomX = Random.Range(-screenWidth, screenWidth);
 
-        // Create the position vector (using the Spawner's height)
+       
         Vector2 spawnPos = new Vector2(randomX, transform.position.y);
 
-        // Create the object!
+      
         Instantiate(plankPrefab, spawnPos, Quaternion.identity);
     }
 }
